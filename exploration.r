@@ -16,11 +16,9 @@ addfile <- dir("HES")
 #Initialize dataframe with all LSOAs
 HES_activity <- read.table("LSOA/LSOA_code_all.csv", header = TRUE, sep = ",")
 
-<<<<<<< HEAD
+
 
 #loop over each file, process and add to the new dataframe
-=======
->>>>>>> 0ebc04931fe0ef9477e4e3f5c53ed66ae005833a
 setwd("C:/Users/899159/Documents/110. BD - Health/LHE Intel Model/Data/HES")
 
 for (i in 1:length(addfile)){
@@ -48,10 +46,5 @@ for (i in 1:length(addfile)){
     HES_activity <- merge(HES_activity, t, all = TRUE)
 
 }    
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> 0ebc04931fe0ef9477e4e3f5c53ed66ae005833a
     
