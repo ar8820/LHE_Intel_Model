@@ -27,16 +27,25 @@ load("HES_activity.RData")
 ###################################################################################
 #### exploratory analysis
 
-d <- HES_activity
 
-head(d, 10)
+#load data into memory
+load("LHE_Intel.RData")
 
-summary(d)
-
-
-
+#summarise
+summary(LHE_Intel)
 
 
+#histogram explore
+hAE <- hist(subset(LHE_Intel$AE_1213, LHE_Intel$AE_1213<10000), 100, col = "BLUE")
+hOP <- hist(subset(LHE_Intel$OP_1213, LHE_Intel$OP_1213<10000), 100, col = "BLUE")
+hAPC <- hist(subset(LHE_Intel$APC_1213, LHE_Intel$APC_1213<10000), 100, col = "BLUE")
+
+plot( hAE, col=rgb(0,0,1,1/4), xlim=c(10,8000), ylim=c(0,8000))  
+plot( hOP, col=rgb(1,0,0,1/4), xlim=c(10,8000), ylim=c(0,8000), add=T)
+plot( hAPC, col=rgb(0,1,0,1/4), xlim=c(10,8000), ylim=c(0,8000), add=T)
+
+
+boxplot(subset(LHE_Intel$AE_1213, LHE_Intel$AE_1213<10000))
 
 
 
