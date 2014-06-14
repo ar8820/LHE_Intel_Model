@@ -3,6 +3,15 @@ LHE Intel Modelling Notes:
 
 Things to do:
 
+
+Important to work through the population data manipulation
+then work on activity volume trends
+
+
+
+
+
+
 DONE    find out where the NAs come from and what to do with them
 DONE    drop MISS and S99999999 codes
 
@@ -14,7 +23,7 @@ DONE        box plots by age
 DONE        box plots by IMD
         box plots by prevalence
 
-    simple mapping of LSOAs in thematic maps
+    simple mapping of LSOAs in thematic maps - ignore, I'm going to do this properly in ArcGIS
     
     add travel time data
 
